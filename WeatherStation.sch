@@ -8395,8 +8395,8 @@ NOT compatible with all available part number pinout schemes- DOUBLE CHECK!!!</d
 <part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603-RES" value="330Ω"/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M02" device="PTH"/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U2" library="SparkFun-Sensors" deviceset="HTU21D" device="SMD"/>
-<part name="U3" library="SparkFun-Sensors" deviceset="MPL3115A2" device="LGA8"/>
+<part name="U2" library="SparkFun-Sensors" deviceset="HTU21D" device="SMD" value="HTU21D"/>
+<part name="U3" library="SparkFun-Sensors" deviceset="MPL3115A2" device="LGA8" value="MPL3115A2"/>
 <part name="U4" library="SparkFun-DigitalIC" deviceset="PCA9306" device="" value="PCA9306"/>
 <part name="U$1" library="SparkFun-PowerIC" deviceset="V_REG_MIC5205" device="3.3V" value="MIC5205"/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
