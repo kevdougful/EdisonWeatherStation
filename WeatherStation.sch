@@ -7887,6 +7887,7 @@ NOT compatible with all available part number pinout schemes- DOUBLE CHECK!!!</d
 <part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603-RES" value="330Ω"/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="4.7µF"/>
 <part name="C9" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="4.7µF"/>
+<part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7937,8 +7938,9 @@ NOT compatible with all available part number pinout schemes- DOUBLE CHECK!!!</d
 <instance part="R5" gate="G$1" x="20.32" y="96.52" rot="R180"/>
 <instance part="R6" gate="G$1" x="35.56" y="106.68" rot="R180"/>
 <instance part="R7" gate="G$1" x="35.56" y="99.06" rot="R180"/>
-<instance part="C8" gate="G$1" x="111.76" y="53.34" rot="MR0"/>
+<instance part="C8" gate="G$1" x="91.44" y="63.5" rot="MR0"/>
 <instance part="C9" gate="G$1" x="175.26" y="66.04" rot="MR0"/>
+<instance part="GND15" gate="1" x="91.44" y="55.88"/>
 </instances>
 <busses>
 </busses>
@@ -8027,6 +8029,10 @@ NOT compatible with all available part number pinout schemes- DOUBLE CHECK!!!</d
 <pinref part="U2" gate="U$1" pin="GND@7"/>
 <wire x1="99.06" y1="63.5" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="66.04" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U2" gate="U$1" pin="GND@2"/>
+<wire x1="101.6" y1="68.58" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="68.58" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
+<junction x="99.06" y="66.04"/>
 </segment>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
@@ -8054,6 +8060,11 @@ NOT compatible with all available part number pinout schemes- DOUBLE CHECK!!!</d
 <pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="33.02" x2="58.42" y2="30.48" width="0.1524" layer="91"/>
 <junction x="58.42" y="30.48"/>
+</segment>
+<segment>
+<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="91.44" y1="60.96" x2="91.44" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBAT" class="0">
@@ -8086,6 +8097,15 @@ NOT compatible with all available part number pinout schemes- DOUBLE CHECK!!!</d
 <junction x="66.04" y="53.34"/>
 <label x="71.12" y="53.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U2" gate="U$1" pin="VDD"/>
+<wire x1="81.28" y1="71.12" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="71.12" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="71.12" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
+<junction x="91.44" y="71.12"/>
+<label x="81.28" y="71.12" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$7" class="0">
 <segment>
@@ -8108,6 +8128,20 @@ NOT compatible with all available part number pinout schemes- DOUBLE CHECK!!!</d
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="43.18" x2="58.42" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="43.18" x2="58.42" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SDA" class="0">
+<segment>
+<pinref part="U2" gate="U$1" pin="DATA"/>
+<wire x1="127" y1="71.12" x2="121.92" y2="71.12" width="0.1524" layer="91"/>
+<label x="127" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCL" class="0">
+<segment>
+<pinref part="U2" gate="U$1" pin="SCK"/>
+<wire x1="127" y1="68.58" x2="121.92" y2="68.58" width="0.1524" layer="91"/>
+<label x="127" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
