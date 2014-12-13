@@ -8715,6 +8715,11 @@ NOT compatible with all available part number pinout schemes- DOUBLE CHECK!!!</d
 <pinref part="U4" gate="G$1" pin="SDA1"/>
 <wire x1="45.72" y1="88.9" x2="53.34" y2="88.9" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="SDA"/>
+<wire x1="215.9" y1="73.66" x2="208.28" y2="73.66" width="0.1524" layer="91"/>
+<label x="215.9" y="73.66" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -8726,6 +8731,11 @@ NOT compatible with all available part number pinout schemes- DOUBLE CHECK!!!</d
 <pinref part="U4" gate="G$1" pin="SCL1"/>
 <wire x1="45.72" y1="91.44" x2="53.34" y2="91.44" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="SCL"/>
+<wire x1="215.9" y1="76.2" x2="208.28" y2="76.2" width="0.1524" layer="91"/>
+<label x="215.9" y="76.2" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -8733,18 +8743,6 @@ NOT compatible with all available part number pinout schemes- DOUBLE CHECK!!!</d
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="73.66" x2="170.18" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="73.66" x2="170.18" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="SCL"/>
-<wire x1="215.9" y1="76.2" x2="208.28" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="SDA"/>
-<wire x1="215.9" y1="73.66" x2="208.28" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
