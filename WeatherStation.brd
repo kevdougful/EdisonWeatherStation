@@ -149,7 +149,6 @@
 <hole x="28.575" y="42.545" drill="2"/>
 <text x="29.972" y="26.416" size="1.27" layer="21" font="vector" ratio="15" rot="R90">Weather Block</text>
 <wire x1="1.778" y1="53.34" x2="28.702" y2="53.34" width="0.1524" layer="20"/>
-<wire x1="30.48" y1="46.99" x2="30.48" y2="53.34" width="0.254" layer="51"/>
 <wire x1="30.48" y1="53.34" x2="0" y2="53.34" width="0.254" layer="51"/>
 <wire x1="0" y1="53.34" x2="0" y2="46.99" width="0.254" layer="51"/>
 <wire x1="30.48" y1="1.778" x2="28.702" y2="0" width="0.1524" layer="20" curve="-90"/>
@@ -1107,26 +1106,6 @@ design rules under a new name.</description>
 </elements>
 <signals>
 <signal name="GND">
-<polygon width="0.1778" layer="16" spacing="0.254" rank="6">
-<vertex x="30.48" y="51.562"/>
-<vertex x="30.48" y="1.778" curve="-90"/>
-<vertex x="28.702" y="0"/>
-<vertex x="1.778" y="0" curve="-90"/>
-<vertex x="0" y="1.778"/>
-<vertex x="0" y="51.562" curve="-90"/>
-<vertex x="1.524" y="53.34"/>
-<vertex x="28.448" y="53.34" curve="-90"/>
-</polygon>
-<polygon width="0.1778" layer="1" spacing="0.254" rank="6">
-<vertex x="30.48" y="1.778" curve="-90"/>
-<vertex x="28.752" y="0"/>
-<vertex x="1.778" y="0" curve="-90"/>
-<vertex x="0" y="1.778"/>
-<vertex x="0" y="51.562" curve="-90"/>
-<vertex x="1.778" y="53.34"/>
-<vertex x="28.702" y="53.34" curve="-90"/>
-<vertex x="30.48" y="51.562"/>
-</polygon>
 <via x="28.2448" y="22.1742" extent="1-16" drill="0.3302"/>
 <contactref element="J1" pad="15"/>
 <contactref element="J1" pad="1"/>
@@ -1192,11 +1171,26 @@ design rules under a new name.</description>
 <via x="8.382" y="42.164" extent="1-16" drill="0.6" diameter="0.254"/>
 <wire x1="8.382" y1="42.164" x2="8.382" y2="28.448" width="0.254" layer="16"/>
 <wire x1="8.382" y1="28.448" x2="2.032" y2="22.098" width="0.254" layer="16"/>
-<wire x1="26.9438" y1="22.1798" x2="28.2448" y2="22.1742" width="0" layer="19" extent="1-1"/>
-<wire x1="25.96" y1="22.18" x2="26.9438" y2="22.1798" width="0" layer="19" extent="1-16"/>
-<wire x1="25.96" y1="22.1798" x2="25.96" y2="22.18" width="0" layer="19" extent="1-16"/>
-<wire x1="25.96" y1="22.98" x2="25.96" y2="22.18" width="0" layer="19" extent="16-16"/>
+<polygon width="0.3048" layer="1">
+<vertex x="0" y="42.926"/>
+<vertex x="30.48" y="42.926"/>
+<vertex x="30.48" y="2.032"/>
+<vertex x="30.48" y="1.778" curve="-90"/>
+<vertex x="28.702" y="0"/>
+<vertex x="1.778" y="0" curve="-90"/>
+<vertex x="0" y="1.778"/>
+</polygon>
+<polygon width="0.3048" layer="16">
+<vertex x="0" y="42.926"/>
+<vertex x="30.48" y="42.926"/>
+<vertex x="30.48" y="1.778" curve="-90"/>
+<vertex x="28.702" y="0"/>
+<vertex x="1.778" y="0" curve="-90"/>
+<vertex x="0" y="1.778"/>
+</polygon>
 <wire x1="25.96" y1="22.9798" x2="25.96" y2="22.98" width="0" layer="19" extent="1-16"/>
+<wire x1="25.96" y1="22.18" x2="25.96" y2="22.98" width="0" layer="19" extent="16-16"/>
+<wire x1="25.96" y1="22.1798" x2="25.96" y2="22.18" width="0" layer="19" extent="1-16"/>
 <wire x1="25.96" y1="21.38" x2="25.96" y2="22.18" width="0" layer="19" extent="16-16"/>
 <wire x1="25.96" y1="21.3798" x2="25.96" y2="21.38" width="0" layer="19" extent="1-16"/>
 <wire x1="25.96" y1="20.98" x2="25.96" y2="21.38" width="0" layer="19" extent="16-16"/>
@@ -1205,22 +1199,13 @@ design rules under a new name.</description>
 <wire x1="25.96" y1="20.5798" x2="25.96" y2="20.58" width="0" layer="19" extent="1-16"/>
 <wire x1="25.96" y1="20.18" x2="25.96" y2="20.58" width="0" layer="19" extent="16-16"/>
 <wire x1="25.96" y1="20.1798" x2="25.96" y2="20.18" width="0" layer="19" extent="1-16"/>
+<wire x1="26.9438" y1="22.1798" x2="25.96" y2="22.18" width="0" layer="19" extent="1-16"/>
 <wire x1="27.1272" y1="20.5232" x2="25.96" y2="20.58" width="0" layer="19" extent="16-16"/>
-<wire x1="10.922" y1="25.03" x2="25.96" y2="22.98" width="0" layer="19" extent="1-16"/>
-<wire x1="8.382" y1="28.448" x2="10.922" y2="25.03" width="0" layer="19" extent="1-16"/>
-<wire x1="6.466" y1="26.67" x2="8.382" y2="28.448" width="0" layer="19" extent="1-16"/>
-<wire x1="6.0659" y1="24.13" x2="6.466" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="8.266" y1="21.59" x2="6.0659" y2="24.13" width="0" layer="19" extent="1-1"/>
-<wire x1="6.0659" y1="18.796" x2="8.266" y2="21.59" width="0" layer="19" extent="1-1"/>
-<wire x1="6.974" y1="16.51" x2="6.0659" y2="18.796" width="0" layer="19" extent="1-1"/>
-<wire x1="3.926" y1="16.51" x2="6.974" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="2.032" y1="16.192" x2="3.926" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="10.668" y1="17.946" x2="6.974" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="14.224" y1="50.8" x2="9.398" y2="51.562" width="0" layer="19" extent="1-1"/>
+<wire x1="28.2448" y1="22.1742" x2="26.9438" y2="22.1798" width="0" layer="19" extent="1-1"/>
+<wire x1="11.938" y1="36.322" x2="13.716" y2="34.682" width="0" layer="19" extent="1-1"/>
 <wire x1="10.914" y1="35.152" x2="11.938" y2="36.322" width="0" layer="19" extent="1-1"/>
-<wire x1="13.716" y1="34.682" x2="11.938" y2="36.322" width="0" layer="19" extent="1-1"/>
-<wire x1="4.682" y1="10.892" x2="3.926" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="2.032" y1="8.192" x2="4.682" y2="10.892" width="0" layer="19" extent="1-1"/>
+<wire x1="6.0659" y1="18.796" x2="6.974" y2="16.51" width="0" layer="19" extent="1-1"/>
+<wire x1="10.922" y1="25.03" x2="8.382" y2="28.448" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="VSYS">
 <contactref element="J1" pad="6"/>
