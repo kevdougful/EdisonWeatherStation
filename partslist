@@ -1,0 +1,43 @@
+Partlist
+
+Exported from WeatherStation.brd at 12/18/2014 8:01:44 PM
+
+EAGLE Version 7.1.0 Copyright (c) 1988-2014 CadSoft
+
+Assembly variant: 
+
+Part     Value                               Package            Library               Position (inch)       Orientation
+
+C1       4.7µF                               0805               SparkFun-Capacitors   (0.31 0.65)           R180
+C2       4.7µF                               0805               SparkFun-Capacitors   (0.19 0.65)           R180
+C3       4.7µF                               0805               SparkFun-Capacitors   (0.29 0.85)           R0
+C4       4.7µF                               0805               SparkFun-Capacitors   (0.29 1.05)           R180
+C5       4.7µF                               0805               SparkFun-Capacitors   (0.43 0.95)           R90
+C6       0.1µF                               0805               SparkFun-Capacitors   (0.84 1.91)           R90
+C7       1µF                                 0805               SparkFun-Capacitors   (0.9 1.91)            R90
+C8       4.7µF                               0805               SparkFun-Capacitors   (0.28 2.04)           R0
+C9       0.1µF                               0805               SparkFun-Capacitors   (0.7 1.8)             R0
+C10      10µF                                EIA3216            SparkFun-Capacitors   (0.99 1.91)           R270
+C11      4.7µF                               0805               SparkFun-Capacitors   (0.54 1.33)           R90
+D1       MBRA140                             SMA-DIODE          SparkFun-DiscreteSemi (0.31 0.48)           R90
+FID1     FIDUCIAL1X2                         FIDUCIAL-1X2       SparkFun-Aesthetics   (0.05 0.2)            R0
+FID2     FIDUCIAL1X2                         FIDUCIAL-1X2       SparkFun-Aesthetics   (1 1.7)               R0
+FID3     FIDUCIAL1X2                         FIDUCIAL-1X2       SparkFun-Aesthetics   (0.05 0.2)            MR0
+FID4     FIDUCIAL1X2                         FIDUCIAL-1X2       SparkFun-Aesthetics   (1 1.7)               MR0
+J1       EDISON_CONNECTOR_FULLMOUNTING_HOLES EDISON_DAUGHTER    Edison                (1.1 0.15)            MR0
+J2       EDISON_CONNECTOR_FULLHEADER         DF40C-70DP-0.4(51) Edison                (0.97007874 0.637)    MR90
+JP1      USB-MICROB                          USB-MICROB         SparkFun-Connectors   (0.08 0.48)           R270
+JP2      M02PTH                              1X02               SparkFun-Connectors   (0.08 0.87)           R270
+LED1                                         LED-0603           SparkFun-LED          (0.42 0.6)            R180
+R1       2k?                                 0603-RES           SparkFun-Resistors    (0.42 0.74)           R90
+R2       330?                                0603-RES           SparkFun-Resistors    (0.42 0.48)           R90
+R3       1k?                                 0603-RES           SparkFun-Resistors    (0.33 1.29)           R0
+R4       1k?                                 0603-RES           SparkFun-Resistors    (0.33 1.37)           R0
+R5       1k?                                 0603-RES           SparkFun-Resistors    (0.56 1.2)            R0
+R6       1k?                                 0603-RES           SparkFun-Resistors    (0.56 1.12)           R180
+R7       1k?                                 0603-RES           SparkFun-Resistors    (0.56 1.04)           R180
+U$1      MIC5205                             SOT23-5            SparkFun-PowerIC      (0.29 0.95)           R270
+U1       MCP73831                            SOT23-5            SparkFun-PowerIC      (0.29 0.74)           R270
+U2       HTU21D                              HTU21D             SparkFun-Sensors      (0.28 1.94)           R0
+U3       MPL3115A2                           LGA8               SparkFun-Sensors      (0.69 1.92)           R90
+U4       PCA9306                             PSOP-8             SparkFun-DigitalIC    (0.46 1.33)           R180
